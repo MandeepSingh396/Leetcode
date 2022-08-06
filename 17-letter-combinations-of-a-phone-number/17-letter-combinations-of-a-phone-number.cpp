@@ -7,7 +7,7 @@ class Solution {
             res.push_back(current);
             return;
         }
-        for(char &sym : m[digits[index]])
+        for(char sym : m[digits[index]])
             backtrack(current + sym, index+1, digits, res);
     }
 public:
